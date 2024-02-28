@@ -10,6 +10,7 @@ import KahootLogo from "../src/assets/images/kahoot_logo.png";
 import QuizizzLogo from "../src/assets/images/quizizz_logo.png";
 import QuizletLogo from "../src/assets/images/quizlet_logo.png";
 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -48,25 +49,25 @@ function Navbar({ className }: { className?: string }) {
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
               title="Edpuzzle"
-              href="https://edpuzzle.com"
+              href="/edpuzzle"
               src={EdpuzzleLogo}
               description=""
             />
             <ProductItem
               title="Quizlet"
-              href="https://quizlet.com"
+              href="/quizlet"
               src={QuizletLogo}
               description=""
             />
             <ProductItem
               title="Quizizz"
-              href="https://joinmyquiz.com"
+              href="/quizizz"
               src={QuizizzLogo}
               description=""
             />
             <ProductItem
               title="Kahoot"
-              href="https://kahoot.com"
+              href="/kahoot"
               src={KahootLogo}
               description=""
             />
