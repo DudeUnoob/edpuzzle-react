@@ -1,10 +1,10 @@
 import { create } from "zustand"
 import { persist, createJSONStorage } from "zustand/middleware"
 
-const useAuthStore = create(persist(
-  (set, get) => ({
+const useAuthStore = create<any>(persist(
+  (set: any) => ({
     userAuth: {},
-    updateUserAuth: (authState) => set({ userAuth: authState })
+    updateUserAuth: (authState: any) => set({ userAuth: authState })
   }),
   {
     name: "auth-storage", 

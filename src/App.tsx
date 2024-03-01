@@ -9,9 +9,9 @@ import EdpuzzleLogo from "../src/assets/images/edpuzzle_logo.png";
 import KahootLogo from "../src/assets/images/kahoot_logo.png";
 import QuizizzLogo from "../src/assets/images/quizizz_logo.png";
 import QuizletLogo from "../src/assets/images/quizlet_logo.png";
-import { supabase } from "../src/functions/supabaseConnect"
+import { supabase } from "./functions/supabaseConnect"
 import { DiscordLogin } from './components/discord-login';
-import useAuthStore from "../src/context/authStateManagement"
+import useAuthStore from "./context/authStateManagement"
 import { DiscordLogout } from './components/discord-logout';
 
 
