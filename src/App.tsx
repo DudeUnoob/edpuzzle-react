@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { Route, Routes, useLocation, BrowserRouter} from "react-router-dom";
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+//import { Route, Routes, useLocation, BrowserRouter} from "react-router-dom";
+import { Route, Routes, BrowserRouter} from "react-router-dom";
 import Home from "./routes/Home"
-import { Menu, MenuItem, ProductItem, HoveredLink } from "../src/components/navbar-menu"
+import { Menu, MenuItem, ProductItem } from "../src/components/navbar-menu"
+//import { Menu, MenuItem, ProductItem, HoveredLink } from "../src/components/navbar-menu"
 import { cn } from "../src/utils/cn"
 import EdpuzzleLogo from "../src/assets/images/edpuzzle_logo.png";
 import KahootLogo from "../src/assets/images/kahoot_logo.png";
@@ -16,7 +18,7 @@ import { DiscordLogout } from './components/discord-logout';
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   useEffect(() => {
     // supabase.auth.onAuthStateChange((event, session) => {

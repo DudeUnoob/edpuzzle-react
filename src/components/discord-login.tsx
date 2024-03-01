@@ -1,7 +1,8 @@
 "use client";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
+// import React, { useEffect } from "react";
 import { supabase } from "../functions/supabaseConnect.ts";
-import useAuthStore from "../context/authStateManagement.ts";
+// import useAuthStore from "../context/authStateManagement.ts";
 
 export const DiscordLogin = () => {
     useEffect(() => {
