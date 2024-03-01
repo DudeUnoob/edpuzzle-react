@@ -1,12 +1,12 @@
 "use client";
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
 import { HeroParallax } from "../components/hero-parallax";
 import { ContainerScroll } from "../components/container-scroll-animation";
 import { products } from "../components/hero-parallax";
 import { users } from "../components/container-scroll-animation";
 import { HoverEffect } from "../components/card-hover-effect";
-import useAuthStore from "../context/authStateManagement"
-import { supabase } from "../functions/supabaseConnect"
+// import useAuthStore from "../context/authStateManagement"
+// import { supabase } from "../functions/supabaseConnect"
 
 
 export default function Home ({ }) {
