@@ -17,27 +17,27 @@ import QuizletLogo from "../assets/images/quizlet_logo.png";
 export const products = [
   {
     title:"Edpuzzle",
-    link:"https://edpuzzle.com",
+    link:"/edpuzzle",
     thumbnail: EdpuzzleLogo,
     description:"Edpuzzle answer helper"
   },
   {
     title:"Quizlet",
-    link:"https://quizlet.com",
+    link:"/quizlet",
     thumbnail:
     QuizletLogo,
     description:"Quizlet live answer helper"
   },
   {
     title:"Quizizz",
-    link: "https://quizizz.com",
+    link: "/quizizz",
     thumbnail:
     QuizizzLogo,
     description:"Quizziz live answer helper"
   },
   {
     title:"Kahoot",
-    link:"https://kahoot.com",
+    link:"/kahoot",
     thumbnail:
     KahootLogo,
     description:"Kahoot game answer helper"

@@ -1,14 +1,26 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { HeroParallax } from "../components/hero-parallax";
 import { ContainerScroll } from "../components/container-scroll-animation";
 import { products } from "../components/hero-parallax";
 import { users } from "../components/container-scroll-animation";
 import { HoverEffect } from "../components/card-hover-effect";
-
+import useAuthStore from "../context/authStateManagement"
+import { supabase } from "../functions/supabaseConnect"
 
 
 export default function Home ({ }) {
+
+  // useEffect(() => {
+
+  //   async function check(){
+  //     await supabase.auth.getSession().then((value) => {
+  //       console.log(value)
+  //     })
+  //   }
+
+  //   check()
+  // }, [])
    return (
    <>
    <HeroParallax products={products} />
@@ -33,6 +45,8 @@ export default function Home ({ }) {
   </div>
       
     </div>
+
+   
     </>
     )
 }
