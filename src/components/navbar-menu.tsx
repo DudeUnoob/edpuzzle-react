@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 
@@ -23,6 +23,8 @@ export const MenuItem = ({
   item: string;
   children?: React.ReactNode;
 }) => {
+  
+
   return (
     <div onMouseEnter={() => setActive(item)} className="relative ">
       <motion.p
@@ -66,9 +68,24 @@ export const Menu = ({
   setActive: (item: string | null) => void;
   children: React.ReactNode;
 }) => {
+  const [menuTimer, setMenuTimer] = useState<NodeJS.Timeout | null>(null);
+
+  const handleMouseLeave = () => {
+    if (menuTimer) clearTimeout(menuTimer);
+    setMenuTimer(
+      setTimeout(() => {
+        setActive(null);
+      }, 500) // Adjust the delay time as needed
+    );
+  };
+
+  const handleMouseEnter = () => {
+    if (menuTimer) clearTimeout(menuTimer);
+  };
   return (
     <nav
-      onMouseLeave={() => setActive(null)} // resets the state
+    onMouseEnter={handleMouseEnter}
+    onMouseLeave={handleMouseLeave}
       className="relative rounded-full boder border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-6 "
     >
       {children}

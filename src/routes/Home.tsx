@@ -5,6 +5,8 @@ import { ContainerScroll } from "../components/container-scroll-animation";
 import { products } from "../components/hero-parallax";
 import { users } from "../components/container-scroll-animation";
 import { HoverEffect } from "../components/card-hover-effect";
+import { useEffect } from "react";
+import getAuthState from "../functions/getAuthState";
 // import useAuthStore from "../context/authStateManagement"
 // import { supabase } from "../functions/supabaseConnect"
 
@@ -21,6 +23,10 @@ export default function Home ({ }) {
 
   //   check()
   // }, [])
+
+  useEffect(() => {
+    getAuthState()
+  },[])
    return (
    <>
    <HeroParallax products={products} />
