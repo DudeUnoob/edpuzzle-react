@@ -7,7 +7,7 @@ import { users } from "../components/container-scroll-animation";
 import { HoverEffect } from "../components/card-hover-effect";
 import { useEffect } from "react";
 import getAuthState from "../functions/getAuthState";
-// import useAuthStore from "../context/authStateManagement"
+import useAuthStore from "../context/authStateManagement"
 // import { supabase } from "../functions/supabaseConnect"
 
 
@@ -25,7 +25,10 @@ export default function Home ({ }) {
   // }, [])
 
   useEffect(() => {
-    getAuthState()
+
+    const userData = useAuthStore.getState().userAuth
+     
+    
   },[])
    return (
    <>

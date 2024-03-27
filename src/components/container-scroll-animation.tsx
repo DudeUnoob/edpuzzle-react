@@ -131,30 +131,6 @@ export const Card = ({
 };
 
 export const users = [
-
-    // {
-    //     title:"Edpuzzle",
-    //     link:"https://edpuzzle.com",
-    //     thumbnail: ""
-    //   },
-    //   {
-    //     title:"Quizlet",
-    //     link:"https://quizlet.com",
-    //     thumbnail:
-    //     "https://th.bing.com/th/id/OIP.lQe4nWY1dlNUCUpHxxYIhAHaEK?w=315&h=180&c=7&r=0&o=5&pid=1.7"
-    //   },
-    //   {
-    //     title:"Quizizz",
-    //     link: "https://quizizz.com",
-    //     thumbnail:
-    //     "https://th.bing.com/th/id/OIP.wTBFhtGjY9X0j280UMOdggHaEK?w=319&h=180&c=7&r=0&o=5&pid=1.7"
-    //   },
-    //   {
-    //     title:"Kahoot",
-    //     link:"https://kahoot.com",
-    //     thumbnail:
-    //     "https://1000marcas.net/wp-content/uploads/2022/04/Kahoot-Logo.jpg"
-    //   },
   {
     name: "Edpuzzle",
     designation: "Video learning platform",
